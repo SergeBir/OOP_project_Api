@@ -53,7 +53,3 @@ class YaUploader:
         for photo in photos:
             photo_path = os.path.join(self.photos_dir, photo)
             ya.upload_file_to_disk("api_vk_homework/" + photo, photo_path)
-
-
-uploader = YaUploader(tokens=input("Введите токен от Яндекс.Диска: "))
-uploader.start_uploading()
